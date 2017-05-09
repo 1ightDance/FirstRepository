@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>zz程度调查问卷</title>
+
+	</head>
+	<body bgcolor=gray topmargin=40>
+	<h2><center>本问卷测试你的寿命，想知道你能活多久吗，快开始吧</center></h2>
+	<ol>
+		<li>你的性别？<br>
+			<input name="sex" type="radio" value="boy" checked>男<input name="sex" type="radio" value="girl">女</li>
+		<li>你的年龄？<br>
+			<input name="age" type="radio" value=">未成年" checked>未成年<input name="age" type="radio" value="成年">成年</li>
+		<li>你胖吗？<br>
+			<input name="fat" type="radio" value="不胖" checked>否<input name="fat" type="radio" value="胖">对</li>
+		<li>你单身吗<br>
+			<input name="single" type="radio" value="并不单身" checked>否<input name="single" type="radio" value="单身">对</li>
+		<li>你有病吗？<br>
+			<input name="ill" type="radio" value="没病" checked>否<input name="ill" type="radio" value="有病">对<input name="ill" type="radio" value="马上病死">你才有病！</li>
+		<li>你的不良习惯？<br>
+			<input name="habit1" type="checkbox" value="胡说八道" checked>怎么会有？我这么优秀的人<br>
+			<input name="habit2" type="checkbox" value="干一些说不出口的事">不好意思开口...<br>
+			<input name="habit3" type="checkbox" value="性情暴躁">关你屁事！<br>
+			<input name="habit4" type="checkbox" value="其他">其他<input name="text" type="text" maxlenth="15" size="70" value=""></form>
+		<li>如果可以用半生寿命换TA陪你终生，你会选谁？<br>
+			<input name="friend" type="radio" value="活不过20岁"><img src="pig.jpg" height=300px weight=200px>
+			<input name="friend" type="radio" value="活不过20岁"><img src="people.jpg" height=300px weight=200px><br>
+			<input name="friend" type="radio" value="活不过20岁"><img src="dog.jpg" height=300px weight=200px>
+			<input name="friend" type="radio" value="活不过20岁"><img src="duck.jpg" height=300px weight=200px><br>
+
+	</ol>
+	<center><button onclick="result">Submit</button></center>
+	<script type="text/javascript" >
+		function　result{
+			var f=document.forms[0];
+			alert("测试结果：孩子你活不到20岁，花点时间准备后事吧");
+		}
+		</script>
+	</body>
+</html>
