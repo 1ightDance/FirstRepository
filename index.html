@@ -1,8 +1,327 @@
-<<html>
-<head>
-	<title>hello</title>
-</head>
-<body>
-<h1>first try</h1>
-</body>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Welcome to my index!</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+
+    <style type="text/css">
+      body{
+        background:url(./bkgrd.png);
+       /*background-size:10% 5%;*/
+       background-repeat:repeat;
+      }
+      div{
+        opacity:0.98;
+      }
+    </style>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">欢迎访问</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#start">主页</a></li>
+            <li><a href="#news">资讯中心</a></li>
+            <li><a href="#works">最新作品</a></li>
+            <li><a href="http://tingyx.uuu9.com/">配乐欣赏</a></li>
+            <li><a href="http://so.redocn.com/chahua/d3cecfb7b2e5bbad.htm">精美配图</a></li>
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">关于站长</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系我:<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">电话</li>
+                <li><a href="mailto:773617349@qq.com?Subject=Hello%20Handsome%20Man&Body=I'm%20sending%20msg%20to%20u">E-mail</a></li>
+                <li class="dropdown-header">留言</li>
+              </ul>
+            </li>
+            <!-- <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<!-- 轮播图 -->
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="carousel slide" id="carousel-693057">
+        <ol class="carousel-indicators">
+          <li class="active" data-slide-to="0" data-target="#carousel-693057">
+          </li>
+          <li data-slide-to="1" data-target="#carousel-693057">
+          </li>
+          <li data-slide-to="2" data-target="#carousel-693057">
+          </li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img alt="" src="http://pic.kekenet.com/2016/1128/55651480313453.jpg"  class="img-responsive center-block" />
+            <div class="carousel-caption">
+              <h4>
+                宇宙航行 Verson:0.0.1
+              </h4>
+              <p>
+                你将驾驶着你的宇宙飞船穿梭于宇宙之中，探索远方的未知世界
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img alt="" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494077048047&di=428d2bc78160c14d363066dd579600f6&imgtype=0&src=http%3A%2F%2Fi2.sinaimg.cn%2Fdy%2Fc%2F2015-04-15%2F1429052446_0mDUcD.jpg"  class="img-responsive center-block"/>
+            <div class="carousel-caption">
+              <h4>
+                逃学大作战Verson:0.0.1
+              </h4>
+              <p>
+                老子受够了！我要离开这个学校
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img alt="" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494077222493&di=a089e33a1667326ab468cc8c0d10bf5e&imgtype=0&src=http%3A%2F%2Fwww.gzwtqx.com%2Fzhuanti%2Fwdy%2Fimages%2Fwdy_list_bpic5.jpg"  class="img-responsive center-block" />
+            <div class="carousel-caption">
+              <h4>
+                more?
+              </h4>
+              <p>
+                今后我们定会给你更多惊喜！
+              </p>
+            </div>
+          </div>
+        </div> <a data-slide="prev" href="#carousel-693057" class="left carousel-control">‹</a> <a data-slide="next" href="#carousel-693057" class="right carousel-control">›</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="container">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron" id="start">
+        <h1>这里是我们的工作室首页</h1>
+        <p>我们致力于游戏的制作和开发工作，在这里你可以了解和体验我们的作品，享受游戏之乐。同时，你也可以浏览和欣赏游戏行业中大佬们制作出的游戏配乐和插图</p>
+        <p>感谢 您的访问！</p>
+      </div>
+  </div> <!-- /container -->
+
+<div class="container-fluid">
+  <div class="row-fluid"> 
+    <div class="col-md-8">
+      <div class="panel panel-primary"style="letter-spacing: 4.6pt; line-height: 1.5;">
+        <div class="panel-heading">
+          <h3 class="panel-title" id="news">游戏资讯<span class="label label-success navbar-right"><a href="http://news.17173.com/dalu/">more</a></span></h3>
+        </div>
+        <ol>
+          <li><span>[05-09]</span><a href="http://news.17173.com/content/05092017/163255127.shtml" target="_blank">最强大脑挑战《龙武2》 靠智商的密探玩法 </a> </li>
+           
+          <li><span>[05-09]</span><a href="http://news.17173.com/content/05092017/163201833.shtml" target="_blank">再续辉煌 艾格拉斯《英雄战魂》 资料片前瞻 </a> </li>
+           
+          <li><span>[05-09]</span><a href="http://news.17173.com/content/05092017/154709528.shtml" target="_blank">走入《自由禁区》枪战世界 享受真实感官体验 </a> </li>
+           
+          <li><span>[05-09]</span><a href="http://news.17173.com/content/05092017/152820514.shtml" target="_blank">赤膊上阵斗翻天《神仙与妖怪》激情比武擂台赛 </a> </li>
+           
+          <li><span>[05-09]</span><a href="http://news.17173.com/content/05092017/152214397_1.shtml" target="_blank">网易新端游《泰亚史诗》开测 浓浓的复古暗黑风 </a> </li>
+           
+          <li><span>[05-09]</span><a href="http://news.17173.com/content/05092017/144842721_1.shtml" target="_blank">《篱笆庄秘闻》登陆青睐之光 少女对抗杨教授 </a> </li>
+           
+          <li><span>[05-09]</span><a href="http://news.17173.com/content/05092017/143647626.shtml" target="_blank">太贵了买不起!  春丽1:3手办售价RMB6000+ </a> </li>
+           
+          <li><span>[05-09]</span><a href="http://news.17173.com/content/05092017/141005541.shtml" target="_blank">这样画不会被主任打吗? 校服都被你们玩坏了 </a> </li>
+           
+          <li><span>[05-09]</span><a href="http://news.17173.com/content/05092017/135117650.shtml" target="_blank">与游戏高度融合《幻想全明星》打造奇幻世界观 </a> </li>
+           
+          <li><span>[05-09]</span><a href="http://news.17173.com/content/05092017/135009046.shtml" target="_blank">王者逐鹿 《传奇世界》3V3跨服赛激战正酣 </a> </li>
+           
+          <li><span>[05-09]</span><a href="http://news.17173.com/content/05092017/134833794_1.shtml" target="_blank">《天下3》网剧定档512 终极版预告片全网首曝 </a> </li>
+           
+          <li><span>[05-09]</span><a href="http://news.17173.com/content/05092017/134715791.shtml" target="_blank">猎杀BOSS首领《超凡战纪》十大终极BOSS曝光 </a> </li>
+       </ol>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">一个萌萌的广告位</h3>
+        </div>
+        <div class="panel-body">
+          <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494361084324&di=ab388047575f1df4538c59d7cc0548e6&imgtype=0&src=http%3A%2F%2Fs13.sinaimg.cn%2Fbmiddle%2F00240DPVzy6MXCwrlBq8c%26690" style="float:left; width: 100%;height: 100%;display: inline-table;">中国高级技师的摇篮！
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="works">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">逃学大作战</h3>
+        </div>
+        <div class="panel-body">
+          <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494077048047&di=428d2bc78160c14d363066dd579600f6&imgtype=0&src=http%3A%2F%2Fi2.sinaimg.cn%2Fdy%2Fc%2F2015-04-15%2F1429052446_0mDUcD.jpg" style="float:left; height:128px;width:128px">
+          上课？我受够了！我要与老师和教导主任们战斗到底！
+          <span class="label label-success"><a href="https://www.baidu.com/">more</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">星际航行</h3>
+        </div>
+        <div class="panel-body">
+          <img src="http://pic.kekenet.com/2016/1128/55651480313453.jpg" style="float:left; height:128px;width:128px">
+          精通物理的你一定可以根据开普勒三大定律、万有引力和相对论，操纵你的飞船，探索遥远的星空
+          <span class="label label-success"><a href="https://www.baidu.com/">more</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">面板标题</h3>
+        </div>
+        <div class="panel-body">
+          <img src="./icon.png" style="float:left;">
+          内容
+          <span class="label label-success"><a href="https://www.baidu.com/">more</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">逃学大作战</h3>
+        </div>
+        <div class="panel-body">
+          <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494077048047&di=428d2bc78160c14d363066dd579600f6&imgtype=0&src=http%3A%2F%2Fi2.sinaimg.cn%2Fdy%2Fc%2F2015-04-15%2F1429052446_0mDUcD.jpg" style="float:left; height:128px;width:128px">
+          上课？我受够了！我要与老师和教导主任们战斗到底！
+          <span class="label label-success"><a href="https://www.baidu.com/">more</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">星际航行</h3>
+        </div>
+        <div class="panel-body">
+          <img src="http://pic.kekenet.com/2016/1128/55651480313453.jpg" style="float:left; height:128px;width:128px">
+          精通物理的你一定可以根据开普勒三大定律、万有引力和相对论，操纵你的飞船，探索遥远的星空
+          <span class="label label-success"><a href="https://www.baidu.com/">more</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">面板标题</h3>
+        </div>
+        <div class="panel-body">
+          <img src="./icon.png" style="float:left;">
+          内容
+          <span class="label label-success"><a href="https://www.baidu.com/">more</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">逃学大作战</h3>
+        </div>
+        <div class="panel-body">
+          <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494077048047&di=428d2bc78160c14d363066dd579600f6&imgtype=0&src=http%3A%2F%2Fi2.sinaimg.cn%2Fdy%2Fc%2F2015-04-15%2F1429052446_0mDUcD.jpg" style="float:left; height:128px;width:128px">
+          上课？我受够了！我要与老师和教导主任们战斗到底！
+          <span class="label label-success"><a href="https://www.baidu.com/">more</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">星际航行</h3>
+        </div>
+        <div class="panel-body">
+          <img src="http://pic.kekenet.com/2016/1128/55651480313453.jpg" style="float:left; height:128px;width:128px">
+          精通物理的你一定可以根据开普勒三大定律、万有引力和相对论，操纵你的飞船，探索遥远的星空
+          <span class="label label-success"><a href="https://www.baidu.com/">more</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">面板标题</h3>
+        </div>
+        <div class="panel-body">
+          <img src="./icon.png" style="float:left;">
+          内容
+          <span class="label label-success"><a href="https://www.baidu.com/">more</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
