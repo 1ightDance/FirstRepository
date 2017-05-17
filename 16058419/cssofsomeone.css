@@ -1,25 +1,150 @@
 /*! Typebase.less v0.1.0 | MIT License */ /* Setup */
 @import url("./css/font-awesome.css");
- html {   /* Change default typefaces here */   
- 	font-family: serif;   font-size: 137.5%;  
- 	 -webkit-font-smoothing: antialiased; }
+
+html {
+   /* Change default typefaces here */
+    font-family: serif;
+    font-size: 137.5%;
+    -webkit-font-smoothing: antialiased;
+}
  	  /* Copy & Lists */ 
- 	  p {   line-height: 1.5rem;   margin-top: 1.5rem;   margin-bottom: 0; } 
- 	  ul, ol {   margin-top: 1.5rem;   margin-bottom: 1.5rem; } 
- 	  ul li, ol li {   line-height: 1.5rem; } 
- 	  ul ul, ol ul, ul ol, ol ol {   margin-top: 0;   margin-bottom: 0; } 
- 	  blockquote {   line-height: 1.5rem;   margin-top: 1.5rem;   margin-bottom: 1.5rem; } 
- 	  /* Headings */ h1, h2, h3, h4, h5, h6 {   /* Change heading typefaces here */   font-family: sans-serif;   margin-top: 1.5rem;   
- 	  	margin-bottom: 0;   line-height: 1.5rem; } 
- 	  	h1 {   font-size: 4.242rem;   line-height: 4.5rem;   margin-top: 3rem; } 
- 	  	h2 {   font-size: 2.828rem;   line-height: 3rem;   margin-top: 3rem; } 
- 	  	h3 {   font-size: 1.414rem; } h4 {   font-size: 0.707rem; } 
- 	  	h5{   font-size: 0.4713333333333333rem; } 
- 	  	h6 {   font-size: 0.3535rem; } 
+p {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+ul li, ol li {
+    line-height: 1.5rem;
+}
+
+ul ul, ol ul, ul ol, ol ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+blockquote {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+} 
+ 	  /* Headings */h1, h2, h3, h4, h5, h6 {
+   /* Change heading typefaces here */
+    font-family: sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-size: 4.242rem;
+    line-height: 4.5rem;
+    margin-top: 3rem;
+}
+
+h2 {
+    font-size: 2.828rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+}
+
+h3 {
+    font-size: 1.414rem;
+}
+
+h4 {
+    font-size: 0.707rem;
+}
+
+h5 {
+    font-size: 0.4713333333333333rem;
+}
+
+h6 {
+    font-size: 0.3535rem;
+} 
  	  	/* Tables */
- 	  	 table {   margin-top: 1.5rem;   border-spacing: 0px;   border-collapse: collapse; } /*
+table {
+    margin-top: 1.5rem;
+    border-spacing: 0px;
+    border-collapse: collapse;
+} /*
  	  	table td, table th {   padding: 0;   line-height: 33px; } */
  	  	
- 	  	/* Code blocks */ code {   vertical-align: bottom; } 
- 	  	/* Leading paragraph text */ .lead {   font-size: 1.414rem; } 
-/* Hug the block above you */ .hug {   margin-top: 0; }
+ 	  	/* Code blocks */code {
+    vertical-align: bottom;
+} 
+ 	  	/* Leading paragraph text */.lead {
+    font-size: 1.414rem;
+} 
+/* Hug the block above you */.hug {
+    margin-top: 0;
+}
+
+		dd a{
+			color: white;
+			text-decoration: none;}
+		body {
+			font: normal 90% Helvetica, Arial, sans-serif;
+			 background:url(../bkgrd.png);
+			 background-repeat:repeat;
+		}
+		h1{
+			font-family: "华文新魏"
+		}
+
+		.panel-body{
+			background:linear-gradient(rgba(155, 94, 94, 0.5),rgba(80, 80, 80, 0.5));
+		}
+		#basicinfomation{
+			margin: 0.5%;
+			width: 45%;
+			float: left;
+		}
+		#hobby{
+			width: 40%;
+			float: right;
+		}
+		#connect{
+			width: 100%;
+			/*position:fixed;*/
+            bottom:0;
+		}
+		nav{
+			position: fixed;
+			top: 0;
+			left: 0;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			font-size: 1.5em;
+			font-family: "黑体";
+			background-color: black;
+			z-index: 9;
+		}
+		nav>ul{
+			padding: 0.5%;
+			margin: 0.5%;
+		}
+		nav>ul>li{
+			float: left;
+			display: inline;
+			margin-left: 4%;
+		}
+		#back{
+			float: right;
+		}
+		nav>ul>li>a{
+			width: 100%;
+			color: white;
+			text-decoration: none;}
+		}
+		a{display: block;}
+		a:hover{color: red ;}
+		.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+		.clearfix{*+height:1%;}
