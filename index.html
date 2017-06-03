@@ -3,12 +3,13 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
+    <!-- 使用下面这段代码使用的是Edge 。模式Edge 模式告诉 IE 以最高级模式渲染文档，也就是任何 IE 版本都以当前版本所支持的最高级标准模式渲染，避免版本升级造成的影响。简单的说，就是什么版本 IE 就用什么版本的标准模式渲染。 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <meta name="description" content="hdu 某工作室首页">
+    <meta name="author" content="someone">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
 
     <title>缔造我的世界!</title>
 
@@ -18,12 +19,11 @@
 
     <style type="text/css">
       body{
-        background:url(./bkgrd.png);
-       /*background-size:10% 5%;*/
-       background-repeat:repeat;
+        background:linear-gradient(rgba(115, 129, 225, 0.5),rgba(155, 114, 1184, 0.5));
+        background-repeat:repeat;
       }
       div{
-        opacity:0.98;
+        opacity:0.99;
       }
     </style>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -31,10 +31,10 @@
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+    <![if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <![endif]>
   </head>
 
   <body>
@@ -75,17 +75,26 @@
           </div><!--/.nav-collapse -->
         </div>
     </nav>
+
+    <!-- 欢迎banner -->
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <center><img src="./banner.gif" style="height:120px;" class="img-responsive"></center>
+        </div>
+      </div>
+    </div>
     <!-- 页头 -->
-    <div class="container" id="start">
+    <div class="container-fluid" id="start">
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron" id="start" style="background:linear-gradient(rgba(255, 235, 235, 0.7),rgba(235, 235, 255, 0.7));">
-        <h1>这里是我们的工作室首页</h1>
+      <div class="jumbotron" id="start" style="background:linear-gradient(rgba(185, 193, 235, 0.7),rgba(235, 235, 225, 0.7));">
+        <center><p style="font-size:60px;">这里是我们的工作室首页</p></center>
         <p>我们致力于游戏的制作和开发工作，在这里你可以了解和体验我们的作品，享受游戏之乐。同时，你也可以浏览和欣赏游戏行业中大佬们制作出的游戏配乐和插图</p>
         <p>感谢 您的访问！</p>
       </div>
     </div> 
     <!-- 轮播图 -->
-    <div class="container">
+    <div class="container-fluid">
       <div class="row-fluid">
         <div class="span12">
           <div class="carousel slide" id="carousel-693057">
@@ -101,12 +110,12 @@
             </ol>
             <div class="carousel-inner">
               <div class="item active">
-                <img alt="" src="./handleearth.png" style="height:400px;" class="img-responsive center-block" />
+                <img alt="" src="./handleearth.png" style="height:600px;" class="img-responsive center-block" />
                 <div class="carousel-caption">
                 </div>
               </div>
               <div class="item">
-                <img alt="" src="http://pic.kekenet.com/2016/1128/55651480313453.jpg"  class="img-responsive center-block" />
+                <img alt="" src="./space.jpg" style="height:600px;"  class="img-responsive center-block" />
                 <div class="carousel-caption">
                   <h4>
                     宇宙航行 Verson:0.0.1
@@ -117,7 +126,7 @@
                 </div>
               </div>
               <div class="item">
-                <img alt="" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494077048047&di=428d2bc78160c14d363066dd579600f6&imgtype=0&src=http%3A%2F%2Fi2.sinaimg.cn%2Fdy%2Fc%2F2015-04-15%2F1429052446_0mDUcD.jpg" style="height:400px;" class="img-responsive center-block"/>
+                <img alt="" src="./skipwall.jpg" style="height:600px;" class="img-responsive center-block"/>
                 <div class="carousel-caption">
                   <h4>
                     逃学大作战Verson:0.0.1
@@ -128,7 +137,7 @@
                 </div>
               </div>
               <div class="item">
-                <img alt="" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494077222493&di=a089e33a1667326ab468cc8c0d10bf5e&imgtype=0&src=http%3A%2F%2Fwww.gzwtqx.com%2Fzhuanti%2Fwdy%2Fimages%2Fwdy_list_bpic5.jpg"  style="height:400px;" class="img-responsive center-block" />
+                <img alt="" src="./more.jpg"  style="height:600px;" class="img-responsive center-block" />
                 <div class="carousel-caption">
                   <h4>
                     more?
@@ -145,7 +154,7 @@
     </div>
     <br>
     <!-- 资讯 -->
-    <div class="container">
+    <div class="container-fluid">
       <div class="row-fluid"> 
         <div class="col-md-8">
           <div class="panel panel-primary"style="letter-spacing: 4.6pt; line-height: 1.5;">
@@ -192,7 +201,7 @@
       </div>
     </div>
     <!-- 作品放在这里 -->
-    <div class="container">
+    <div class="container-fluid">
       <div class="row clearfix">
         <div class="col-md-12 column">
           <div class="panel panel-default">
@@ -212,7 +221,7 @@
                       </div>
                       <div class="panel-body">
                         <a href="javascript:alert('打开失败，请检查网络环境');">
-                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494077048047&di=428d2bc78160c14d363066dd579600f6&imgtype=0&src=http%3A%2F%2Fi2.sinaimg.cn%2Fdy%2Fc%2F2015-04-15%2F1429052446_0mDUcD.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>
+                        <img src="./skipwall.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>
                         上课？我受够了！我要与老师和教导主任们战斗到底！
                         <span class="label label-success"><a href="javascript:alert('打开失败，请检查网络环境');">more</a></span>
                       </div>
@@ -225,7 +234,7 @@
                       </div>
                       <div class="panel-body">
                         <a href="./workexample.html">
-                          <img src="http://pic.kekenet.com/2016/1128/55651480313453.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>                        
+                          <img src="./space.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>                        
                         精通物理的你一定可以根据开普勒三大定律、万有引力和相对论，操纵你的飞船，探索遥远的星空
                         <span class="label label-success"><a href="./workexample.html">more</a></span>
                       </div>
@@ -237,7 +246,8 @@
                         <h3 class="panel-title">机器人激斗</h3>
                       </div>
                       <div class="panel-body">
-                        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=888230202,3674327321&fm=23&gp=0.jpg"  class="img-circle" style="float:left;height:128px;width:128px">
+                        <a href="javascript:alert('打开失败，请检查网络环境');">
+                        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=888230202,3674327321&fm=23&gp=0.jpg"  class="img-circle" style="float:left;height:128px;width:128px"></a>
                         操控你的机器人打败对手吧
                         <span class="label label-success"><a href="javascript:alert('打开失败，请检查网络环境');">more</a></span>
                       </div>
@@ -246,7 +256,7 @@
                 </div>
               </div>
                                  
-              <div class="container-fluid" id="works">
+              <div class="container-fluid">
                 <div class="row">
                   <div class="col-md-4">
                     <div class="panel panel-primary">
@@ -255,7 +265,7 @@
                       </div>
                       <div class="panel-body">
                         <a href="javascript:alert('打开失败，请检查网络环境');">
-                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494077048047&di=428d2bc78160c14d363066dd579600f6&imgtype=0&src=http%3A%2F%2Fi2.sinaimg.cn%2Fdy%2Fc%2F2015-04-15%2F1429052446_0mDUcD.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>
+                        <img src="./skipwall.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>
                         上课？我受够了！我要与老师和教导主任们战斗到底！
                         <span class="label label-success"><a href="javascript:alert('打开失败，请检查网络环境');">more</a></span>
                       </div>
@@ -268,7 +278,7 @@
                       </div>
                       <div class="panel-body">
                         <a href="./workexample.html">
-                          <img src="http://pic.kekenet.com/2016/1128/55651480313453.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>                        
+                          <img src="./space.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>                        
                         精通物理的你一定可以根据开普勒三大定律、万有引力和相对论，操纵你的飞船，探索遥远的星空
                         <span class="label label-success"><a href="./workexample.html">more</a></span>
                       </div>
@@ -280,7 +290,8 @@
                         <h3 class="panel-title">机器人激斗</h3>
                       </div>
                       <div class="panel-body">
-                        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=888230202,3674327321&fm=23&gp=0.jpg"  class="img-circle" style="float:left;height:128px;width:128px">
+                        <a href="javascript:alert('打开失败，请检查网络环境');">
+                        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=888230202,3674327321&fm=23&gp=0.jpg"  class="img-circle" style="float:left;height:128px;width:128px"></a>
                         操控你的机器人打败对手吧
                         <span class="label label-success"><a href="javascript:alert('打开失败，请检查网络环境');">more</a></span>
                       </div>
@@ -289,7 +300,7 @@
                 </div>
               </div>
                                  
-              <div class="container-fluid" id="works">
+              <div class="container-fluid">
                 <div class="row">
                   <div class="col-md-4">
                     <div class="panel panel-primary">
@@ -298,7 +309,7 @@
                       </div>
                       <div class="panel-body">
                         <a href="javascript:alert('打开失败，请检查网络环境');">
-                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494077048047&di=428d2bc78160c14d363066dd579600f6&imgtype=0&src=http%3A%2F%2Fi2.sinaimg.cn%2Fdy%2Fc%2F2015-04-15%2F1429052446_0mDUcD.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>
+                        <img src="./skipwall.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>
                         上课？我受够了！我要与老师和教导主任们战斗到底！
                         <span class="label label-success"><a href="javascript:alert('打开失败，请检查网络环境');">more</a></span>
                       </div>
@@ -311,7 +322,7 @@
                       </div>
                       <div class="panel-body">
                         <a href="./workexample.html">
-                          <img src="http://pic.kekenet.com/2016/1128/55651480313453.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>                        
+                          <img src="./space.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>                        
                         精通物理的你一定可以根据开普勒三大定律、万有引力和相对论，操纵你的飞船，探索遥远的星空
                         <span class="label label-success"><a href="./workexample.html">more</a></span>
                       </div>
@@ -323,7 +334,8 @@
                         <h3 class="panel-title">机器人激斗</h3>
                       </div>
                       <div class="panel-body">
-                        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=888230202,3674327321&fm=23&gp=0.jpg"  class="img-circle" style="float:left;height:128px;width:128px">
+                        <a href="javascript:alert('打开失败，请检查网络环境');">
+                        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=888230202,3674327321&fm=23&gp=0.jpg"  class="img-circle" style="float:left;height:128px;width:128px"></a>
                         操控你的机器人打败对手吧
                         <span class="label label-success"><a href="javascript:alert('打开失败，请检查网络环境');">more</a></span>
                       </div>
@@ -332,7 +344,7 @@
                 </div>
               </div>
                                  
-              <div class="container-fluid" id="works">
+              <div class="container-fluid">
                 <div class="row">
                   <div class="col-md-4">
                     <div class="panel panel-primary">
@@ -341,7 +353,7 @@
                       </div>
                       <div class="panel-body">
                         <a href="javascript:alert('打开失败，请检查网络环境');">
-                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494077048047&di=428d2bc78160c14d363066dd579600f6&imgtype=0&src=http%3A%2F%2Fi2.sinaimg.cn%2Fdy%2Fc%2F2015-04-15%2F1429052446_0mDUcD.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>
+                        <img src="./skipwall.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>
                         上课？我受够了！我要与老师和教导主任们战斗到底！
                         <span class="label label-success"><a href="javascript:alert('打开失败，请检查网络环境');">more</a></span>
                       </div>
@@ -354,7 +366,7 @@
                       </div>
                       <div class="panel-body">
                         <a href="./workexample.html">
-                          <img src="http://pic.kekenet.com/2016/1128/55651480313453.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>                        
+                          <img src="./space.jpg" class="img-circle" style="float:left; height:128px;width:128px"></a>                        
                         精通物理的你一定可以根据开普勒三大定律、万有引力和相对论，操纵你的飞船，探索遥远的星空
                         <span class="label label-success"><a href="./workexample.html">more</a></span>
                       </div>
@@ -366,7 +378,8 @@
                         <h3 class="panel-title">机器人激斗</h3>
                       </div>
                       <div class="panel-body">
-                        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=888230202,3674327321&fm=23&gp=0.jpg"  class="img-circle" style="float:left;height:128px;width:128px">
+                        <a href="javascript:alert('打开失败，请检查网络环境');">
+                        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=888230202,3674327321&fm=23&gp=0.jpg"  class="img-circle" style="float:left;height:128px;width:128px"></a>
                         操控你的机器人打败对手吧
                         <span class="label label-success"><a href="javascript:alert('打开失败，请检查网络环境');">more</a></span>
                       </div>
@@ -374,13 +387,6 @@
                   </div>
                 </div>
               </div>
-                       
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                     
             </div>
           </div>
         </div>
@@ -389,7 +395,7 @@
 
     <!-- 音乐 -->
 
-    <div class="container" id="music">
+    <div class="container-fluid" id="music">
       <div class="row clearfix">
         <div class="col-md-4 column">
           <img src="http://img4.duitang.com/uploads/item/201502/26/20150226014445_jaQUV.jpeg" class="img-circle">
@@ -398,7 +404,7 @@
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">
-                游戏配乐<span style="float:right;" class="label label-success"><a href="javascript:alert('打开失败，请检查网络环境');">more</a></span>
+                游戏配乐<span style="float:right;" class="label label-success"><a href="./listpage.html">more</a></span>
               </h3>
             </div>
             <div class="panel-body">
@@ -459,6 +465,39 @@
                   <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
                 </td>
               </tr>
+              <tr>
+                <td>
+                  魔兽世界·Wrath Of The Lich King
+                </td>
+                <td>
+                  紧张、大气，代入感十足，让玩家一下子融入到那个世界中去
+                </td>
+                <td>
+                  <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                </td>
+              </tr>
+              <tr class="success">
+                <td>
+                  魔兽争霸·The Dawn
+                </td>
+                <td>
+                  保留金属乐的连续猛烈，淡化狂乱的节奏，使该曲少些狂躁恐惧，多了份神秘与向往
+                </td>
+                <td>
+                  <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                </td>
+              </tr>
+              <tr class="error">
+                <td>
+                  鬼泣4·shall never surrender
+                </td>
+                <td>
+                  这首曲子前半段激情，后半段忧伤,整首歌曲贯彻Nero和Kyrie之间的感情，感动众多玩家
+                </td>
+                <td>
+                  <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                </td>
+              </tr>
             </tbody>
           </table>
             </div>
@@ -467,7 +506,7 @@
       </div>
     </div>
     <!-- 游戏插图 -->
-    <div class="container" id="pics">
+    <div class="container-fluid" id="pics">
       <div class="row clearfix">
         <div class="col-md-12 column">
           <div class="panel panel-default">
@@ -484,7 +523,7 @@
       </div>
     </div>
     <!-- 页脚 -->
-    <div class="container">
+    <div class="container-fluid">
       <div class="row clearfix">
         <div class="col-md-12 column">
           <footer>

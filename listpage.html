@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!-- 使用下面这段代码使用的是Edge 。模式Edge 模式告诉 IE 以最高级模式渲染文档，也就是任何 IE 版本都以当前版本所支持的最高级标准模式渲染，避免版本升级造成的影响。简单的说，就是什么版本 IE 就用什么版本的标准模式渲染。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="hdu 某工作室列表页">
+    <meta name="author" content="someone">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>游戏配乐</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+
+    <style type="text/css">
+      body{
+        background:linear-gradient(rgba(115, 129, 225, 0.5),rgba(155, 114, 1184, 0.5));
+        background-repeat:repeat;
+      }
+      div{
+        opacity:0.99;
+      }
+    </style>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <![if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]>
+  </head>
+
+  <body>
+     <!-- 导航栏 -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">欢迎访问</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="javascript:location.href='./index.html#start';">主页</a></li>
+            <li><a href="javascript:location.href='./index.html#news';">资讯中心</a></li>
+            <li><a href="javascript:location.href='./index.html#works';">最新作品</a></li>
+            <li><a href="javascript:location.href='./index.html#music';">配乐欣赏</a></li>
+            <li><a href="http://so.redocn.com/chahua/d3cecfb7b2e5bbad.htm">精美配图</a></li>
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="./16058419/index.html">关于站长</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系我:<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">电话</li>
+                <li><a href="mailto:773617349@qq.com?Subject=Hello%20Handsome%20Man&Body=I'm%20sending%20msg%20to%20u">E-mail</a></li>
+                <li class="dropdown-header">留言</li>
+              </ul>
+            </li>
+            <!-- <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- 音乐 -->
+
+    <div class="container-fluid" id="music">
+      <div class="row clearfix">
+        <div class="col-md-9 column">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                游戏配乐
+              </h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-condensed">
+                <tbody>
+                  <tr>
+                    <td>
+                      天之痕
+                    </td>
+                    <td>
+                      轩辕剑外传·天之痕中经典的配乐,感动的不仅是天之痕带给你剧情的感受，而是自己曾经青葱的回忆
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr class="success">
+                    <td>
+                      最终幻想
+                    </td>
+                    <td>
+                      最终幻想经典的BGM的合集，每一首都很独特，尤其eyes on me
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr class="error">
+                    <td>
+                      金庸群侠传·序曲
+                    </td>
+                    <td>
+                      河洛工作室大作，燃情的武侠BGM
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr class="warning">
+                    <td>
+                      火焰纹章
+                    </td>
+                    <td>
+                      火焰纹章 if / fate 原声OST,最经典战棋游戏之一，挺赞的配乐
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr class="info">
+                    <td>
+                      寂静岭2·promise
+                    </td>
+                    <td>
+                      它出色的层次感和简洁的配器,使玩家有种被一步步带入寂静岭氛围的感觉
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      CS·She is my sin
+                    </td>
+                    <td>
+                      She is My Sin是1.6版CS的主题曲，仿佛预示着大战马上爆发
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr class="success">
+                    <td>
+                      CS·It is my life
+                    </td>
+                    <td>
+                      被传为CS主题曲,其实最早是德国的玩家制作视频时用到此音乐，随视频传播，成了人们熟知的CS主题曲
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr class="error">
+                    <td>
+                      寂静岭4·Room of Angle
+                    </td>
+                    <td>
+                      一首很美的音乐,带有深深阴郁感的黑色音乐,黑暗、恐惧、肃穆，却无关痛苦，无关绝望
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr class="warning">
+                    <td>
+                      刺客信条:启示录·Iron
+                    </td>
+                    <td>
+                      大气、磅礴！音乐并不欢快，给人悲怆、苍凉之感,相信每一位玩家都会被这首歌恢弘的气势吸引
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr class="info">
+                    <td>
+                     合金装备:崛起复仇·wrong
+                    </td>
+                    <td>
+                      这首音乐配合CG动画中一个孩子拿着一柄冲锋枪慢慢长大的画面，给予玩家最直接的冲击
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      魔兽世界·Wrath Of The Lich King
+                    </td>
+                    <td>
+                      紧张、大气，代入感十足，让玩家一下子融入到那个世界中去
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr class="success">
+                    <td>
+                      魔兽争霸·The Dawn
+                    </td>
+                    <td>
+                      保留了金属音乐连续猛烈的伴奏，淡化了狂乱无序的节奏，使得该曲少一些狂躁和恐惧，多了份神秘和向往
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr class="error">
+                    <td>
+                      鬼泣4·shall never surrender
+                    </td>
+                    <td>
+                      这首曲子前半段激情，后半段忧伤,整首歌曲贯彻Nero和Kyrie之间的感情，感动众多玩家
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr class="warning">
+                    <td>
+                      英雄传说空之轨迹·星之所在
+                    </td>
+                    <td>
+                      口琴版悠扬寂静，原声版流畅细致，都让人听了便久久难忘
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr class="info">
+                    <td>
+                      奥日和黑暗森林BGM
+                    </td>
+                    <td>
+                     游戏那美轮美奂的画面，以及与之无缝衔接的悲伤委婉的乐曲，把彻彻底底打动玩家
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      仙剑奇侠传·挥剑问情
+                    </td>
+                    <td>
+                      虽是外传主题曲，但丝毫不影响它的受欢迎程度。轻快的旋律和纯净的嗓音，也许会有种时空穿越的感觉
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                  <tr class="success">
+                    <td>
+                      跑跑卡丁车·bgm
+                    </td>
+                    <td>
+                      只有一小段短短的旋律，却承载了无数玩家的欢笑与童年
+                    </td>
+                    <td>
+                      <a href="javascript:alert('打开失败，请检查网络环境');"><span class="label label-info">查看</span></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+                <div class="row clearfix" style="text-align:center;">
+                  <div class="col-md-12 column">
+                    <ul class="pagination">
+                      <li>
+                         <a href="#">上一页</a>
+                      </li>
+                      <li>
+                         <a href="#">1</a>
+                      </li>
+                      <li>
+                         <a href="#">2</a>
+                      </li>
+                      <li>
+                         <a href="#">3</a>
+                      </li>
+                      <li>
+                         <a href="#">4</a>
+                      </li>
+                      <li>
+                         <a href="#">5</a>
+                      </li>
+                      <li>
+                         <a href="#">下一页</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 column">
+          <img src="http://img4.duitang.com/uploads/item/201502/26/20150226014445_jaQUV.jpeg" style="width:100%;" class="img-circle">
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                本月排行
+              </h3>
+            </div>
+            <div class="panel-body">
+              <ol>
+                <li style="margin:10px;">
+                  <span class="glyphicon glyphicon-fire" aria-hidden="true" style="color:red;"></span><a>寂静岭2·promise</a>
+                </li>
+                <li style="margin:10px;">
+                  <span class="glyphicon glyphicon-fire" aria-hidden="true" style="color:red;"></span><a>金庸群侠传·序曲</a>
+                </li>
+                <li style="margin:10px;">
+                  <span class="glyphicon glyphicon-fire" aria-hidden="true" style="color:red;"></span><a>最终幻想·eyes on me</a>
+                </li>
+                <li style="margin:10px;">
+                  <a>刺客信条:启示录·Iron</a>
+                </li>
+                <li style="margin:10px;">
+                  <a>魔兽争霸·The Dawn</a>
+                </li>
+                <li style="margin:10px;">
+                  <a>轩辕剑·天之痕</a>
+                </li>
+                <li style="margin:10px;">
+                  <a>寂静岭4·Room of Angle</a>
+                </li>
+                <li style="margin:10px;">
+                  <a>CS·It is my life</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    <!-- 页脚 -->
+    <div class="container-fluid">
+      <div class="row clearfix">
+        <div class="col-md-12 column">
+          <footer>
+            <p style="text-align:center;">
+              <a>意见反馈</a>&nbsp&nbsp&nbsp<a>关于本站</a>&nbsp&nbsp&nbsp<a>常见问题</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
